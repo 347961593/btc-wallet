@@ -1,0 +1,39 @@
+{
+  "name": "bip39",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bip32": "^5.0.0-rc.0",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^7.0.0-rc.0",
+    "buffer": "^6.0.3",
+    "ecpair": "^3.0.0-rc.0",
+    "tiny-secp256k1": "^2.2.3",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.9.3",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "@vue/tsconfig": "^0.7.0",
+    "crypto-browserify": "^3.12.1",
+    "npm-run-all2": "^7.0.1",
+    "stream-browserify": "^3.0.0",
+    "typescript": "~5.6.3",
+    "vite": "^5.0.0",
+    "vite-plugin-top-level-await": "^1.4.4",
+    "vite-plugin-vue-devtools": "^7.6.5",
+    "vite-plugin-wasm": "^3.3.0",
+    "vue-tsc": "^2.1.10"
+  }
+}
